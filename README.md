@@ -10,14 +10,6 @@ Vigil Reporter is used to actively submit health information to Vigil from your 
 
 _👋 You use vigil-reporter and you want to be listed there? [Contact me](https://valeriansaliou.name/)._
 
-## How to install?
-
-Include `go-vigil-reporter` in your Go code imports:
-
-```go
-import "github.com/valeriansaliou/go-vigil-reporter/vigil_reporter"
-```
-
 ## How to use?
 
 ### Create reporter
@@ -25,7 +17,10 @@ import "github.com/valeriansaliou/go-vigil-reporter/vigil_reporter"
 `vigil-reporter` can be instantiated as such:
 
 ```go
-import "time"
+import (
+  Reporter "github.com/valeriansaliou/go-vigil-reporter/vigil_reporter"
+  "time"
+)
 
 // Build reporter
 // `page_url` + `reporter_token` from Vigil `config.cfg`
