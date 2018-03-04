@@ -24,12 +24,13 @@ import (
 
 // Build reporter
 // `page_url` + `reporter_token` from Vigil `config.cfg`
-reporter := Reporter.New("https://status.example.com", "YOUR_TOKEN_SECRET")
-  .ProbeID("relay")                           // Probe ID containing the parent Node for Replica
-  .NodeID("socket-client")                    // Node ID containing Replica
-  .ReplicaID("192.168.1.10")                  // Unique Replica ID for instance (ie. your IP on the LAN)
-  .Interval(time.Duration(30 * time.Second))  // Reporting interval (in seconds; defaults to 30 seconds if not set)
-  .Build()
+builder := Reporter.New("https://status.example.com", "YOUR_TOKEN_SECRET")
+
+// Probe ID containing the parent Node for Replica
+// Node ID containing Replica
+// Unique Replica ID for instance (ie. your IP on the LAN)
+// Reporting interval (in seconds; defaults to 30 seconds if not set)
+reporter := builder.ProbeID("relay").NodeID("socket-client").ReplicaID("192.168.1.10").Interval(time.Duration(30 * time.Second)).Build()
 
 // Run reporter (starts reporting)
 reporter.Run()
