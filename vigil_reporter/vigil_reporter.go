@@ -177,7 +177,7 @@ func (reporter *Reporter) getLoadCPU() float32 {
   cpuCounts, errCPU := cpu.Counts(true)
 
   if errLoad == nil && errCPU == nil && systemLoad != nil {
-    return float32(systemLoad.Load15 / math.Max(float64(cpuCounts), 1.0))
+    return float32(systemLoad.Load1 / math.Max(float64(cpuCounts), 1.0))
   }
 
   return 0.0
