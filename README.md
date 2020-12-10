@@ -1,6 +1,6 @@
 # go-vigil-reporter
 
-[![Build Status](https://img.shields.io/travis/valeriansaliou/go-vigil-reporter/master.svg)](https://travis-ci.org/valeriansaliou/go-vigil-reporter) [![Buy Me A Coffee](https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg)](https://www.buymeacoffee.com/valeriansaliou)
+[![Test and Build](https://github.com/valeriansaliou/go-vigil-reporter/workflows/Test%20and%20Build/badge.svg?branch=master)](https://github.com/valeriansaliou/go-vigil-reporter/actions?query=workflow%3A%22Test+and+Build%22) [![Buy Me A Coffee](https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg)](https://www.buymeacoffee.com/valeriansaliou)
 
 **Vigil Reporter for Golang. Used in pair with Vigil, the Microservices Status Page.**
 
