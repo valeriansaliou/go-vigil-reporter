@@ -31,7 +31,7 @@ jobs:
           path: |
             ~/go/pkg/mod
             ~/.cache/go-build
-            ${{ GOROOT }}
+            ${{ env.GOROOT }}
           key: ${{ runner.os }}-go
 
       - name: Install dependencies
