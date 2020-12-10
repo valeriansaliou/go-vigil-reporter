@@ -33,6 +33,9 @@ jobs:
             ~/.cache/go-build
           key: ${{ runner.os }}-go
 
+      - name: Install dependencies
+        run: go get ./vigil_reporter
+
       - name: Build code
         run: go build ./vigil_reporter
 
